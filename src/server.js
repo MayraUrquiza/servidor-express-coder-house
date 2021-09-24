@@ -1,6 +1,6 @@
 const express = require('express')
 const {container} = require('./classes/Container.js')
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 const app = express()
 const productContainer = container('productos.txt')
 
